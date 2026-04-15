@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://seha-sa-u.netlify.app/#/inquiries/slenquiry -->
+<html lang="ar" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صحة - منصة الخدمات الصحية</title>
+    <link rel="stylesheet" href="./صحة - منصة الخدمات الصحية_files/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./صحة - منصة الخدمات الصحية_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./صحة - منصة الخدمات الصحية_files/all.min.css">
+    
+</head>
+<body>
+   <header class="header">
+    <div class="container">
+        <div class="nav-wrapper align-right">
+        
+            
+            
+            <!-- Header Section -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="https://www.seha.sa/ui#/" class="nav-link">الرئيسية</a></li>
+                    <li class="nav-item"><a href="https://www.seha.sa/#/services" class="nav-link">الخدمات</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="https://seha-sa-u.netlify.app/#">الاستعلامات</a></li>
+                    <li class="nav-item"><a href="https://www.seha.sa/ui#/faq" class="nav-link">الأسئلة الشائعة</a></li>
+                    <li class="nav-item"><a href="https://www.seha.sa/#/contactUs" class="nav-link">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            
+
+            <div class="auth-buttons">
+                <a class="btn btn-outline" href="https://seha-sa-u.netlify.app/#">إنشاء حساب</a>
+                <a href="https://www.seha.sa/#/account/login" class="btn btn-primary">تسجيل الدخول</a>
+            </div>
+        </div>
+
+
+            <div class="logo">
+                <a class="logo-link" href="https://seha-sa-u.netlify.app/#">
+                    <img src="./صحة - منصة الخدمات الصحية_files/seha.png" alt="صحة" class="logo-img">
+                </a>
+                
+            <button class="mobile-menu" onclick="toggleMobileNav()" aria-label="فتح القائمة">
+                <i class="fas fa-bars"></i>
+            </button>
+            </div>
+
+
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="https://www.seha.sa/ui#/" id="main">الرئيسية</a>
+            <a href="https://www.seha.sa/#/services">الخدمات</a>
+            <a class="active" href="https://seha-sa-u.netlify.app/#">الاستعلامات</a>
+            <a href="https://www.seha.sa/ui#/faq">الأسئلة الشائعة</a>
+            <a href="https://www.seha.sa/#/contactUs">تواصل معنا</a>
+            <a href="https://www.seha.sa/#/account/login" class="mobile-signin">تسجيل الدخول</a>
+
+            
+        </div>
+    </div>
+    
+    
+    <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileNav()"></div>
+</header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="inquiry-section">
+                <h1 class="page-title">الإجازات المرضية</h1>
+                <p class="page-description">
+                    خدمة الاستعلام عن الإجازات المرضية تتيح لك الاستعلام عن حالة طلبك للإجازة ويمكنك طباعتها عن طريق تطبيق صحتي
+                </p>
+                
+                <form class="inquiry-form" id="inquiryForm" onsubmit="handleCheckLeave(event)">
+                     <div id="notFound" class="notFound"></div>
+                    <div class="form-group">
+                        <input type="text" id="leaveNumber" class="form-input" placeholder="رمز الخدمة" required="">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="idNumber" class="form-input" placeholder="رقم الهوية / الإقامة" required="">
+                    </div>
+                     <div id="result" class="result"></div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-submit" id="submitButton">استعلام</button>
+                    </div>
+                </form>
+                
+                <div class="back-link">
+                    <a href="https://www.seha.sa/ui#/inquiries" class="btn btn-back">رجوع للاستعلامات</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+            <div class="footer-logo">
+  <img src="./صحة - منصة الخدمات الصحية_files/seha1.png" alt="صحة" class="footer-logo-img">
+  
+  <div class="divider"></div>
+  
+  <div class="logo-text">
+    <span class="ar-text">صحة</span>
+    <span class="en-text">Seha</span>
+  </div>
+</div>
+
+                    <p class="footer-description">
+                        منصة صحة تخدم جميع المنشآت الطبية من خلال تقديم الخدمات الصحية إلكترونياً لجميع المنشآت الطبية وتسعى إلى توحيد وأتمتة الإجراءات والخدمات بما في ذلك رفع جودة الأداء وخفض التكاليف.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">القائمة الرئيسية</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.seha.sa/#/services" class="footer-link">الخدمات</a></li>
+                        <li><a href="https://www.seha.sa/ui#/inquiries" class="footer-link">الاستعلامات</a></li>
+                        <li><a href="https://www.seha.sa/ui#/faq" class="footer-link">الأسئلة الشائعة</a></li>
+                        <li><a href="https://www.seha.sa/#/contactUs" class="footer-link">تواصل معنا</a></li>
+                    </ul>
+                </div>
+            
+                
+
+
+
+<div class="footer-section contact-section">
+  <h3 class="footer-title">تواصل معنا</h3>
+
+  <div class="contact-content">
+    <div class="contact-info">
+      <p class="contact-item">
+        <img src="./صحة - منصة الخدمات الصحية_files/phone-icon.png" alt="هاتف" class="contact-icon">
+        <a href="tel:920002005" class="contact-link">920002005</a>
+      </p>
+      <p class="contact-item">
+        <img src="./صحة - منصة الخدمات الصحية_files/email-icon.png" alt="بريد" class="contact-icon">
+        <a href="mailto:support@seha.sa" class="contact-link">support@seha.sa</a>
+      </p>
+      <p class="contact-item">
+        <img src="./صحة - منصة الخدمات الصحية_files/whatsapp-icon.png" alt="واتساب" class="contact-icon">
+        <a href="tel:920002005" class="contact-link">920002005</a>
+      </p>
+      <p class="work-hours">أوقات العمل: الأحد حتى الخميس 8 ص - 11 م</p>
+    </div>
+
+    <div class="contact-logos">
+      <img src="./صحة - منصة الخدمات الصحية_files/moh-logo.png" alt="وزارة الصحة" class="org-logo">
+         <div class="separator"></div>
+      <img src="./صحة - منصة الخدمات الصحية_files/lean-logo.png" alt="لين" class="org-logo">
+    </div>
+  </div>
+
+  <div class="social-media">
+    <a class="social-link" href="https://seha-sa-u.netlify.app/#">
+      <img src="./صحة - منصة الخدمات الصحية_files/youtube-icon.png" alt="يوتيوب" class="social-icon">
+    </a>
+     <a class="social-link" href="https://seha-sa-u.netlify.app/#">
+      <img src="./صحة - منصة الخدمات الصحية_files/x.png" alt="منصةاكس" class="social-icon">
+    </a>
+  </div>
+</div>
+
+
+
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">منصة صحة معتمدة من قبل وزارة الصحة © 2026</p>
+                <div class="footer-bottom-links">
+                    <a class="footer-bottom-link" href="https://seha-sa-u.netlify.app/#">سياسة الخصوصية وشروط الاستخدام</a>
+                    <a class="footer-bottom-link" href="https://seha-sa-u.netlify.app/#">دليل الاستخدام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <!-- Scripts -->
+    <script>
+        if (!location.hash) {
+            location.hash = "/inquiries/slenquiry";
+        }
+    </script>
+    <script src="./صحة - منصة الخدمات الصحية_files/api.js.تنزيل"></script>
+    <script src="./صحة - منصة الخدمات الصحية_files/main.js.تنزيل"></script>
+
+
+
+
+</body></html>
