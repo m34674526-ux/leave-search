@@ -1,0 +1,38 @@
+[
+  {
+    "full_name": "محمد جميل ناجي احمد",
+    "personal_id": "1149613513",
+    "leave_type": "مرضية",
+    "duration": "3",
+    "annual_sick_leave_days": 0,
+    "sickleave_start_date": "2026-04-12",
+    "sickleave_end_date": "2026-04-14",
+    "doctor": "يوسف الحربي ",
+    "job_title": "طبيب عام",
+    "sickleave_id": "GSL38208563914"
+  },
+  {
+    "full_name": "عامر محمد علي",
+    "personal_id": "2389743101",
+    "leave_type": "مرضية",
+    "duration": "4",
+    "annual_sick_leave_days": 0,
+    "sickleave_start_date": "2026-04-06",
+    "sickleave_end_date": "2026-04-15",
+    "doctor": "محمد يوسف",
+    "job_title": "طبيب عام",
+    "sickleave_id": "GSL32296172903"
+  },
+  {
+    "full_name": "عامر محمد علي",
+    "personal_id": "2389743101",
+    "leave_type": "مرضية",
+    "duration": "4",
+    "annual_sick_leave_days": 0,
+    "sickleave_start_date": "2026-04-06",
+    "sickleave_end_date": "2026-04-15",
+    "doctor": "محمد يوسف ",
+    "job_title": "طبيب عام",
+    "sickleave_id": "GSL61243428548"
+  }
+]
